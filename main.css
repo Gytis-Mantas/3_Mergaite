@@ -1,66 +1,65 @@
+/* Versija ekranui 1024x768 */
 body,
 body * {
     margin: 0;
     padding: 0;
     vertical-align: top;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    font-family: /*'Segoe UI',*/ Tempus Sans ITC, Tahoma, Geneva, Verdana, sans-serif;
+}               /* ar taip galima prideti papildoma srifta i rinkini ? */
 
 body{
     background-color: #f8f8f8;
-    
 }
 main{
     display: inline-block;
-    width: 1200px;
-    margin-left: calc( (100% - 1200px) / 2 );
-    /* background-color: yellow; */
-    
+    width: 800px;
+    margin-left: calc( (100% - 800px) / 2 );
+    /* background-color: yellowgreen; */
 }
-    header{
+    header{     /* virsutine juosta Logo + 5 mygtukai */
         display: inline-block;
         width: 100%;
         height: 80px;
-        /* background-color: blue; */
+        /* background-color: yellow; */
     }
-        header img{
+        header img{ /* logo */
             display: inline-block;
             height: 50px;
             margin-top: 20px;
             float: left;
-
         }
-        nav{
+        nav{        /* mygtuku bloko pozicionavimas */
             display: inline-block;
             height: 30px;
             margin-top: 25px;
             float: right;
         }
-            a{
+            a{      /* mygtuku tekstas */
                 display: inline-block;
                 color: #000;
                 margin-left: 30px;
-                font-size: 20px;
+                font-size: 14px;
                 text-decoration: none;
-
             }
-            .mygtukas {
-                border: 5px solid red;
+            .mygtukas { /* mygtuko remelyje klase */
+                border: 5px solid grey;
                 margin-top: -5px;
                 padding-left: 10px;
                 padding-right: 10px;
+                /* padding-bottom: 2px; */
                 border-radius: 20px;
+                text-transform: uppercase;
             }
-    section{
+    section{        /* apatine sekcija */
         display: inline-block;
         width: 100%;
+        margin-top: 10%;
         padding: 20px;
-
     }
         div{
             display: inline-block;
-            width: 100%;
+            width: 45%;
             font-size: 100;
         }
             h1{
@@ -70,12 +69,11 @@ main{
             }
             p{
                 display: inline-block;
-                width: 40%;
-                font-size: 40px;
+                width: 100%;
+                font-size: 30px;
             }
         section img{
             display: inline-block;
-            width: 45%;
+            width: 50%;
             float: right;
-
         }
